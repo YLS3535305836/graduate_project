@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : D:\单片机\原理图\PCB_Project\PCB_Project\c8t61.PcbDoc
+Date         : 2019/10/24
+Time         : 17:17:03
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 117
+    Connections routed, 117
+    Connections remaining, 0
+count : 4

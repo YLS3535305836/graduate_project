@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=PB13 Pin=R12-2
+Removed Pin From Net: NetName=PB14 Pin=R13-2
+Removed Pin From Net: NetName=PA8 Pin=U4-1
+Removed Pin From Net: NetName=PB13 Pin=U4-2
+Removed Pin From Net: NetName=PB14 Pin=U4-3
+Removed Pin From Net: NetName=3V3 Pin=U4-4
+Removed Pin From Net: NetName=NRST Pin=U4-5
+Removed Pin From Net: NetName=GND Pin=U4-6
+Removed Pin From Net: NetName=NetK3_2 Pin=U4-7
+Removed Pin From Net: NetName=NetK4_2 Pin=U4-8
+Removed Pin From Net: NetName=NetK5_2 Pin=U4-9
+Removed Pin From Net: NetName=NetK3_1 Pin=U4-10
+Removed Pin From Net: NetName=NetK6_1 Pin=U4-11
+Removed Pin From Net: NetName=NetK9_1 Pin=U4-12
+Removed Pin From Net: NetName=NetK12_1 Pin=U4-13
+Added Pin To Net: NetName=PB15 Pin=R12-2
+Added Pin To Net: NetName=PB13 Pin=R13-2
+Added Room: Name=×Ô»­

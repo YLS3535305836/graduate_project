@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : D:\单片机\原理图\c8t6第二版\c8t6第二版.PcbDoc
+Date         : 2019/10/22
+Time         : 09:46:09
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 160
+    Connections routed, 160
+    Connections remaining, 0
+count : 4

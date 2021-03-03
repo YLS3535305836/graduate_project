@@ -1,0 +1,59 @@
+..\obj\infrared.o: ..\HARDWARE\INFRARED\Infrared.c
+..\obj\infrared.o: ..\HARDWARE\INFRARED\infrared.h
+..\obj\infrared.o: ..\SYSTEM\sys\sys.h
+..\obj\infrared.o: ..\USER\stm32f10x.h
+..\obj\infrared.o: ..\COER\core_cm3.h
+..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\infrared.o: ..\USER\system_stm32f10x.h
+..\obj\infrared.o: ..\USER\stm32f10x_conf.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
+..\obj\infrared.o: ..\USER\stm32f10x.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_bkp.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_can.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_cec.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_crc.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_dac.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_dma.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_exti.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_flash.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_i2c.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_pwr.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_rtc.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_sdio.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_spi.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_tim.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
+..\obj\infrared.o: ..\STM32F10x_FWLib\inc\misc.h
+..\obj\infrared.o: ..\SYSTEM\delay\delay.h
+..\obj\infrared.o: ..\SYSTEM\sys\sys.h
+..\obj\infrared.o: ..\HARDWARE\LED\led.h
+..\obj\infrared.o: ..\HARDWARE\KEY\key.h
+..\obj\infrared.o: ..\HARDWARE\OLED\oled.h
+..\obj\infrared.o: ..\SYSTEM\usart\usart.h
+..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\infrared.o: ..\HARDWARE\USART3\usart3.h
+..\obj\infrared.o: ..\HARDWARE\TIMER\timer.h
+..\obj\infrared.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\infrared.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\infrared.o: ..\HARDWARE\IIC\iic.h
+..\obj\infrared.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\infrared.o: ..\HARDWARE\SHOW\show.h
+..\obj\infrared.o: ..\HARDWARE\EXTI\exti.h
+..\obj\infrared.o: ..\HARDWARE\DataScope_DP\DataScope_DP.h
+..\obj\infrared.o: ..\HARDWARE\STMFLASH\stmflash.h
+..\obj\infrared.o: ..\HARDWARE\FILTER\filter.h
+..\obj\infrared.o: ..\HARDWARE\BEEP\beep.h
+..\obj\infrared.o: ..\HARDWARE\INFRARED\infrared.h
+..\obj\infrared.o: ..\HARDWARE\DMP\inv_mpu.h
+..\obj\infrared.o: ..\HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
+..\obj\infrared.o: ..\HARDWARE\DMP\dmpKey.h
+..\obj\infrared.o: ..\HARDWARE\DMP\dmpmap.h
+..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

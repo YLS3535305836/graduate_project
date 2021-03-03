@@ -1,0 +1,17 @@
+Added Component: Designator=U4(QFN24)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetK12_1 Pin=U4-5
+Added Pin To Net: NetName=NetK9_1 Pin=U4-6
+Added Pin To Net: NetName=NetK6_1 Pin=U4-7
+Added Pin To Net: NetName=NetK3_1 Pin=U4-8
+Added Pin To Net: NetName=NetK3_2 Pin=U4-9
+Added Pin To Net: NetName=NetK4_2 Pin=U4-10
+Added Pin To Net: NetName=NetK5_2 Pin=U4-11
+Added Pin To Net: NetName=GND Pin=U4-19
+Added Pin To Net: NetName=NRST Pin=U4-20
+Added Pin To Net: NetName=3V3 Pin=U4-21
+Added Pin To Net: NetName=PB13 Pin=U4-22
+Added Pin To Net: NetName=PB15 Pin=U4-23
+Added Pin To Net: NetName=PA8 Pin=U4-24
+Added Member To Class: ClassName=×Ô»­ Member=Component U4 TCA8418
+Added Room: Name=×Ô»­

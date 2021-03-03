@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=PA5 Pin=OLED-5
+Removed Pin From Net: NetName=PA6 Pin=OLED-6
+Added Pin To Net: NetName=PA6 Pin=OLED-5
+Added Pin To Net: NetName=PA5 Pin=OLED-6
+Added Room: Name=×Ô»­

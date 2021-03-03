@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PB9 Pin=OLED-5
+Removed Pin From Net: NetName=PB11 Pin=OLED-6
+Added Pin To Net: NetName=PB13 Pin=OLED-3
+Added Pin To Net: NetName=PB15 Pin=OLED-4
+Added Pin To Net: NetName=PA9 Pin=OLED-5
+Added Pin To Net: NetName=PA11 Pin=OLED-6
+Added Room: Name=c8t61

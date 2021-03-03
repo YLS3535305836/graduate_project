@@ -1,0 +1,21 @@
+Added Pin To Net: NetName=PB12 Pin=J1-1
+Added Pin To Net: NetName=PB13 Pin=J1-2
+Added Pin To Net: NetName=PB14 Pin=J1-3
+Added Pin To Net: NetName=PB15 Pin=J1-4
+Added Pin To Net: NetName=PA8 Pin=J1-5
+Added Pin To Net: NetName=PA9 Pin=J1-6
+Added Pin To Net: NetName=PA10 Pin=J1-7
+Added Pin To Net: NetName=PA11 Pin=J1-8
+Added Pin To Net: NetName=PA12 Pin=J1-9
+Added Pin To Net: NetName=DIO Pin=J1-10
+Added Pin To Net: NetName=GND Pin=J1-11
+Added Pin To Net: NetName=3.3v Pin=J1-12
+Added Pin To Net: NetName=CLK Pin=J1-13
+Added Pin To Net: NetName=TDI Pin=J1-14
+Added Pin To Net: NetName=JTDO/PB3 Pin=J1-15
+Added Pin To Net: NetName=PB4 Pin=J1-16
+Added Pin To Net: NetName=PB5 Pin=J1-17
+Added Pin To Net: NetName=PB6 Pin=J1-18
+Added Pin To Net: NetName=PB7 Pin=J1-19
+Added Pin To Net: NetName=BOOT0 Pin=J1-20
+Added Room: Name=c8t61

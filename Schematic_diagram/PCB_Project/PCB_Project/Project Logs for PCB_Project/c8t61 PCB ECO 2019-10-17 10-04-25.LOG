@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=CLK Pin=U1-37
+Removed Pin From Net: NetName=DIO Pin=U2-2
+Added Pin To Net: NetName=DIO Pin=U2-3
+Change Net Name : Old Net Name=CLK New Net Name=GND
+Added Pin To Net: NetName=CLK Pin=U1-37
+Added Pin To Net: NetName=CLK Pin=U2-2
+Added Net: Name=CLK
+Added Room: Name=c8t61

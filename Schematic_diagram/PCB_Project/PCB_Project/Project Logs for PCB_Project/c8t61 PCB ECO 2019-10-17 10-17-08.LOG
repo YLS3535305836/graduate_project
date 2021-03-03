@@ -1,0 +1,21 @@
+Added Pin To Net: NetName=PB8 Pin=J2-1
+Added Pin To Net: NetName=PB9 Pin=J2-2
+Added Pin To Net: NetName=VBAT Pin=J2-3
+Added Pin To Net: NetName=PC13 Pin=J2-4
+Added Pin To Net: NetName=PC14 Pin=J2-5
+Added Pin To Net: NetName=PC15 Pin=J2-6
+Added Pin To Net: NetName=NRST Pin=J2-7
+Added Pin To Net: NetName=PA0 Pin=J2-8
+Added Pin To Net: NetName=PA1 Pin=J2-9
+Added Pin To Net: NetName=PA2 Pin=J2-10
+Added Pin To Net: NetName=PA3 Pin=J2-11
+Added Pin To Net: NetName=PA4 Pin=J2-12
+Added Pin To Net: NetName=PA5 Pin=J2-13
+Added Pin To Net: NetName=PA6 Pin=J2-14
+Added Pin To Net: NetName=PA7 Pin=J2-15
+Added Pin To Net: NetName=PB0 Pin=J2-16
+Added Pin To Net: NetName=PB1 Pin=J2-17
+Added Pin To Net: NetName=PB2 Pin=J2-18
+Added Pin To Net: NetName=PB10 Pin=J2-19
+Added Pin To Net: NetName=PB11 Pin=J2-20
+Added Room: Name=c8t61

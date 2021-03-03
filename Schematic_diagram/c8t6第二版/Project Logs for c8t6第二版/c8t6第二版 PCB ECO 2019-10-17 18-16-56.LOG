@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=PA8 Pin=R11-2
+Removed Pin From Net: NetName=PB13 Pin=R13-2
+Removed Pin From Net: NetName=PB13 Pin=U4-22
+Removed Pin From Net: NetName=PA8 Pin=U4-24
+Added Pin To Net: NetName=PB13 Pin=R11-2
+Added Pin To Net: NetName=PA8 Pin=R13-2
+Added Pin To Net: NetName=PA8 Pin=U4-22
+Added Pin To Net: NetName=PB13 Pin=U4-24
+Added Room: Name=×Ô»­

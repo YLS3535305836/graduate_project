@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PB12 Pin=R8-2
+Removed Pin From Net: NetName=PB14 Pin=R9-2
+Change Component Footprint: Designator=LED1 Old Footprint=SMB New Footprint=LED 1206G
+Change Component Footprint: Designator=X1 Old Footprint=XTAL-3X10 New Footprint=SMD5032-2
+Added Pin To Net: NetName=PB7 Pin=R8-2
+Added Pin To Net: NetName=PB9 Pin=R9-2
+Added Room: Name=c8t61

@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=3V3 Pin=P?-12
+Removed Pin From Net: NetName=3V3 Pin=P?-14
+Removed Pin From Net: NetName=3V3 Pin=P?-15
+Removed Pin From Net: NetName=3V3 Pin=U1-26
+Removed Pin From Net: NetName=3V3 Pin=U1-28
+Removed Pin From Net: NetName=3V3 Pin=U1-29
+Added Pin To Net: NetName=PB14 Pin=R13-2
+Added Pin To Net: NetName=PB14 Pin=U4-3
+Added Pin To Net: NetName=PA8 Pin=P?-15
+Added Pin To Net: NetName=PA8 Pin=R11-2
+Added Pin To Net: NetName=PA8 Pin=U1-29
+Added Pin To Net: NetName=PA8 Pin=U4-1
+Added Net: Name=PA8
+Added Pin To Net: NetName=PB13 Pin=P?-12
+Added Pin To Net: NetName=PB13 Pin=R12-2
+Added Pin To Net: NetName=PB13 Pin=U1-26
+Added Pin To Net: NetName=PB13 Pin=U4-2
+Added Net: Name=PB13
+Added Pin To Net: NetName=PB15 Pin=P?-14
+Added Pin To Net: NetName=PB15 Pin=U1-28
+Added Net: Name=PB15
+Added Room: Name=×Ô»­

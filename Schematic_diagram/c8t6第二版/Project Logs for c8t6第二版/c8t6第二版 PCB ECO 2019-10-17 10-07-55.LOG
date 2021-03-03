@@ -1,0 +1,20 @@
+Added Pin To Net: NetName=GND Pin=P?-12
+Added Pin To Net: NetName=GND Pin=P?-14
+Added Pin To Net: NetName=GND Pin=P?-15
+Added Pin To Net: NetName=GND Pin=U1-26
+Added Pin To Net: NetName=GND Pin=U1-28
+Added Pin To Net: NetName=GND Pin=U1-29
+Added Member To Class: ClassName=自画 Member=Component K3 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K4 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K5 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K6 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K7 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K8 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K9 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K10 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K11 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K12 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K13 3x6x5
+Added Member To Class: ClassName=自画 Member=Component K14 3x6x5
+Added Member To Class: ClassName=自画 Member=Component OLED
+Added Room: Name=自画

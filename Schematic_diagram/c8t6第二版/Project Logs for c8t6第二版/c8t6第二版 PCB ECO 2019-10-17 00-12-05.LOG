@@ -1,0 +1,111 @@
+Added Component: Designator=K3(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K4(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K5(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K6(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K7(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K8(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K9(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K10(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K11(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K12(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K13(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=K14(TSW DIP-6*6*6_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "直插6x6轻触开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetK3_1 Pin=K3-1
+Added Pin To Net: NetName=NetK3_1 Pin=K4-1
+Added Pin To Net: NetName=NetK3_1 Pin=K5-1
+Added Pin To Net: NetName=NetK3_1 Pin=U4-10
+Added Net: Name=NetK3_1
+Added Pin To Net: NetName=NetK3_2 Pin=K3-2
+Added Pin To Net: NetName=NetK3_2 Pin=K6-2
+Added Pin To Net: NetName=NetK3_2 Pin=K9-2
+Added Pin To Net: NetName=NetK3_2 Pin=K12-2
+Added Pin To Net: NetName=NetK3_2 Pin=U4-7
+Added Net: Name=NetK3_2
+Added Pin To Net: NetName=NetK4_2 Pin=K4-2
+Added Pin To Net: NetName=NetK4_2 Pin=K7-2
+Added Pin To Net: NetName=NetK4_2 Pin=K10-2
+Added Pin To Net: NetName=NetK4_2 Pin=K13-2
+Added Pin To Net: NetName=NetK4_2 Pin=U4-8
+Added Net: Name=NetK4_2
+Added Pin To Net: NetName=NetK5_2 Pin=K5-2
+Added Pin To Net: NetName=NetK5_2 Pin=K8-2
+Added Pin To Net: NetName=NetK5_2 Pin=K11-2
+Added Pin To Net: NetName=NetK5_2 Pin=K14-2
+Added Pin To Net: NetName=NetK5_2 Pin=U4-9
+Added Net: Name=NetK5_2
+Added Pin To Net: NetName=NetK6_1 Pin=K6-1
+Added Pin To Net: NetName=NetK6_1 Pin=K7-1
+Added Pin To Net: NetName=NetK6_1 Pin=K8-1
+Added Pin To Net: NetName=NetK6_1 Pin=U4-11
+Added Net: Name=NetK6_1
+Added Pin To Net: NetName=NetK9_1 Pin=K9-1
+Added Pin To Net: NetName=NetK9_1 Pin=K10-1
+Added Pin To Net: NetName=NetK9_1 Pin=K11-1
+Added Pin To Net: NetName=NetK9_1 Pin=U4-12
+Added Net: Name=NetK9_1
+Added Pin To Net: NetName=NetK12_1 Pin=K12-1
+Added Pin To Net: NetName=NetK12_1 Pin=K13-1
+Added Pin To Net: NetName=NetK12_1 Pin=K14-1
+Added Pin To Net: NetName=NetK12_1 Pin=U4-13
+Added Net: Name=NetK12_1
+Added Member To Class: ClassName=自画 Member=Component K3 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K4 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K5 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K6 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K7 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K8 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K9 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K10 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K11 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K12 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K13 6x6x5
+Added Member To Class: ClassName=自画 Member=Component K14 6x6x5
+Added Room: Name=自画
