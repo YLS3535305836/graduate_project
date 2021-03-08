@@ -1,0 +1,1 @@
+c8t6_2edition\startup_stm32f103xb.o: startup_stm32f103xb.s
