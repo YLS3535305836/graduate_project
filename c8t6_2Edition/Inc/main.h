@@ -66,6 +66,12 @@ void Error_Handler(void);
 #define OLED_DC_GPIO_Port GPIOA
 #define OLED_RES_Pin GPIO_PIN_6
 #define OLED_RES_GPIO_Port GPIOA
+#define LCD_SCL_Pin GPIO_PIN_3
+#define LCD_SCL_GPIO_Port GPIOB
+#define LCD_CS_Pin GPIO_PIN_4
+#define LCD_CS_GPIO_Port GPIOB
+#define LCD_SDA_Pin GPIO_PIN_5
+#define LCD_SDA_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
