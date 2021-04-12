@@ -56,7 +56,16 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+int fputc(int ch, FILE *f)
+{
 
+	HAL_UART_Transmit(&huart2, (unsigned char *)&ch, 1, 0xFFFF); 
+	while(__HAL_UART_GET_FLAG(&huart2,UART_FLAG_TC)!=SET);		//等待发�?�完�?
+
+	//while ((USART1->SR & 0X40) == 0); 
+    //USART1->DR = (uint8_t) ch;
+    return ch;
+}
 /* USER CODE END 0 */
 
 /**
@@ -92,7 +101,12 @@ int main(void)
   MX_TIM3_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim3);
+  HAL_TIM_Encoder_Start(&htim2,TIM_CHANNEL_ALL);
+  HAL_TIM_Encoder_Start_IT(&htim2,TIM_CHANNEL_ALL);
+  uint16_t speed = 599;
+  HAL_GPIO_WritePin(Direcion_Pin_GPIO_Port, Direcion_Pin_Pin, GPIO_PIN_RESET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -102,6 +116,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+//	MotorSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
+	TIM_SetTIM1Compare1(speed);
+	printf("Encoder : %d\r\n",MotorSpeed);    
+	HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }

@@ -29,3 +29,5 @@ timer_test\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 timer_test\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 timer_test\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 timer_test\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+timer_test\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+timer_test\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

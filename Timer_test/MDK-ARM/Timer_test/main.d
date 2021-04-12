@@ -28,6 +28,8 @@ timer_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 timer_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 timer_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 timer_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+timer_test\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+timer_test\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 timer_test\main.o: ../Core/Inc/tim.h
 timer_test\main.o: ../Core/Inc/usart.h
 timer_test\main.o: ../Core/Inc/gpio.h

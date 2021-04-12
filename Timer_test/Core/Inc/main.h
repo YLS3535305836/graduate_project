@@ -32,6 +32,8 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdio.h"
+#include "stdlib.h"
 
 /* USER CODE END Includes */
 
@@ -58,10 +60,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Encoder_A_Pin GPIO_PIN_0
-#define Encoder_A_GPIO_Port GPIOA
-#define Encoder_B_Pin GPIO_PIN_1
-#define Encoder_B_GPIO_Port GPIOA
+#define Direcion_Pin_Pin GPIO_PIN_9
+#define Direcion_Pin_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

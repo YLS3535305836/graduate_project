@@ -36,7 +36,8 @@ extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim3;
 
 /* USER CODE BEGIN Private defines */
-
+#define Direction_Clockwise                 0
+#define Direction_Counterclockwise          1
 /* USER CODE END Private defines */
 
 void MX_TIM1_Init(void);
@@ -46,7 +47,8 @@ void MX_TIM3_Init(void);
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* USER CODE BEGIN Prototypes */
-
+extern int16_t MotorSpeed;
+void TIM_SetTIM1Compare1(uint16_t compare);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
