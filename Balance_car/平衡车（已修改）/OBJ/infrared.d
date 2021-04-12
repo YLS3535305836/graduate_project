@@ -3,7 +3,7 @@
 ..\obj\infrared.o: ..\SYSTEM\sys\sys.h
 ..\obj\infrared.o: ..\USER\stm32f10x.h
 ..\obj\infrared.o: ..\COER\core_cm3.h
-..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\infrared.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\infrared.o: ..\USER\system_stm32f10x.h
 ..\obj\infrared.o: ..\USER\stm32f10x_conf.h
 ..\obj\infrared.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -36,7 +36,7 @@
 ..\obj\infrared.o: ..\HARDWARE\KEY\key.h
 ..\obj\infrared.o: ..\HARDWARE\OLED\oled.h
 ..\obj\infrared.o: ..\SYSTEM\usart\usart.h
-..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\infrared.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\infrared.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\infrared.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\infrared.o: ..\HARDWARE\MOTOR\motor.h
@@ -54,6 +54,6 @@
 ..\obj\infrared.o: ..\HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\infrared.o: ..\HARDWARE\DMP\dmpKey.h
 ..\obj\infrared.o: ..\HARDWARE\DMP\dmpmap.h
-..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\infrared.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\infrared.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\infrared.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\infrared.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

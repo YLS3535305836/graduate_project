@@ -3,7 +3,7 @@
 ..\obj\filter.o: ..\SYSTEM\sys\sys.h
 ..\obj\filter.o: ..\USER\stm32f10x.h
 ..\obj\filter.o: ..\COER\core_cm3.h
-..\obj\filter.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\filter.o: ..\USER\system_stm32f10x.h
 ..\obj\filter.o: ..\USER\stm32f10x_conf.h
 ..\obj\filter.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -36,7 +36,7 @@
 ..\obj\filter.o: ..\HARDWARE\KEY\key.h
 ..\obj\filter.o: ..\HARDWARE\OLED\oled.h
 ..\obj\filter.o: ..\SYSTEM\usart\usart.h
-..\obj\filter.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\filter.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\filter.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\filter.o: ..\HARDWARE\MOTOR\motor.h
@@ -54,6 +54,6 @@
 ..\obj\filter.o: ..\HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\filter.o: ..\HARDWARE\DMP\dmpKey.h
 ..\obj\filter.o: ..\HARDWARE\DMP\dmpmap.h
-..\obj\filter.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\filter.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\filter.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

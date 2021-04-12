@@ -3,7 +3,7 @@
 ..\obj\stmflash.o: ..\SYSTEM\sys\sys.h
 ..\obj\stmflash.o: ..\USER\stm32f10x.h
 ..\obj\stmflash.o: ..\COER\core_cm3.h
-..\obj\stmflash.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\stmflash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\stmflash.o: ..\USER\system_stm32f10x.h
 ..\obj\stmflash.o: ..\USER\stm32f10x_conf.h
 ..\obj\stmflash.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -36,7 +36,7 @@
 ..\obj\stmflash.o: ..\HARDWARE\KEY\key.h
 ..\obj\stmflash.o: ..\HARDWARE\OLED\oled.h
 ..\obj\stmflash.o: ..\SYSTEM\usart\usart.h
-..\obj\stmflash.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\stmflash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\stmflash.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\stmflash.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\stmflash.o: ..\HARDWARE\MOTOR\motor.h
@@ -54,6 +54,6 @@
 ..\obj\stmflash.o: ..\HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\stmflash.o: ..\HARDWARE\DMP\dmpKey.h
 ..\obj\stmflash.o: ..\HARDWARE\DMP\dmpmap.h
-..\obj\stmflash.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\stmflash.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\stmflash.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\stmflash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\stmflash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\stmflash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

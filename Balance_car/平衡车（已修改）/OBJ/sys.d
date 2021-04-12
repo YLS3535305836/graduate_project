@@ -2,7 +2,7 @@
 ..\obj\sys.o: ..\SYSTEM\sys\sys.h
 ..\obj\sys.o: ..\USER\stm32f10x.h
 ..\obj\sys.o: ..\COER\core_cm3.h
-..\obj\sys.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\sys.o: ..\USER\system_stm32f10x.h
 ..\obj\sys.o: ..\USER\stm32f10x_conf.h
 ..\obj\sys.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -35,7 +35,7 @@
 ..\obj\sys.o: ..\HARDWARE\KEY\key.h
 ..\obj\sys.o: ..\HARDWARE\OLED\oled.h
 ..\obj\sys.o: ..\SYSTEM\usart\usart.h
-..\obj\sys.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\sys.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\sys.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\sys.o: ..\HARDWARE\MOTOR\motor.h
@@ -53,6 +53,6 @@
 ..\obj\sys.o: ..\HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\sys.o: ..\HARDWARE\DMP\dmpKey.h
 ..\obj\sys.o: ..\HARDWARE\DMP\dmpmap.h
-..\obj\sys.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\sys.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\sys.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

@@ -3,7 +3,7 @@
 ..\obj\mpu6050.o: ..\SYSTEM\sys\sys.h
 ..\obj\mpu6050.o: ..\USER\stm32f10x.h
 ..\obj\mpu6050.o: ..\COER\core_cm3.h
-..\obj\mpu6050.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\mpu6050.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\mpu6050.o: ..\USER\system_stm32f10x.h
 ..\obj\mpu6050.o: ..\USER\stm32f10x_conf.h
 ..\obj\mpu6050.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -36,7 +36,7 @@
 ..\obj\mpu6050.o: ..\HARDWARE\KEY\key.h
 ..\obj\mpu6050.o: ..\HARDWARE\OLED\oled.h
 ..\obj\mpu6050.o: ..\SYSTEM\usart\usart.h
-..\obj\mpu6050.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\mpu6050.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\mpu6050.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\mpu6050.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\mpu6050.o: ..\HARDWARE\MOTOR\motor.h
@@ -54,6 +54,6 @@
 ..\obj\mpu6050.o: ..\HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\mpu6050.o: ..\HARDWARE\DMP\dmpKey.h
 ..\obj\mpu6050.o: ..\HARDWARE\DMP\dmpmap.h
-..\obj\mpu6050.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\mpu6050.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\mpu6050.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\mpu6050.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\mpu6050.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\mpu6050.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

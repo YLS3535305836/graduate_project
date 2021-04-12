@@ -148,43 +148,45 @@ int main(void)
 		JTAG_Set(JTAG_SWD_DISABLE);     									//初始化下载接口 关闭JTAG接口解除IO口占用
 		JTAG_Set(SWD_ENABLE);           									//初始化下载接口 打开SWD接口用于下载烧录
 		delay_init();	    	            									//初始化延时函数
-		uart_init(128000);	            									//初始化串口1 波特率128000
-		uart3_init(38400);               									//初始化串口3 波特率38400
-		LED_Init();                     									//初始化 LED
-	  KEY_Init();                     									//初始化独立按键
-		BEEP_Init();																			//初始化蜂鸣器
-    MY_PWM_Init(7199,0);   														//初始化PWM 10KHZ
+//		uart_init(128000);	            									//初始化串口1 波特率128000
+//		uart3_init(38400);               									//初始化串口3 波特率38400
+//		LED_Init();                     									//初始化 LED
+//	  KEY_Init();                     									//初始化独立按键
+//		BEEP_Init();																			//初始化蜂鸣器
+//    MY_PWM_Init(7199,0);   														//初始化PWM 10KHZ
     Encoder_Init_TIM2();            									//初始化编码器接口1
-    Encoder_Init_TIM4();            									//初始化编码器接口2
-    IIC_Init();                     									//初始化陀螺仪IIC接口
-    MPU6050_initialize();           									//初始化陀螺仪
-		DMP_Init();																				//初始化DMP
-    OLED_Init();                    									//初始化OLED(IIC)接口 初始化OLED显示器配置
-		INFRARED_Init();																	//初始化红外光电对管
-		TIM3_Cap_Init(0XFFFF,72-1);	    									//初始化超声波
-	  MY_EXTI_Init();        														//初始化外部中断
+//    Encoder_Init_TIM4();            									//初始化编码器接口2
+//    IIC_Init();                     									//初始化陀螺仪IIC接口
+//    MPU6050_initialize();           									//初始化陀螺仪
+//		DMP_Init();																				//初始化DMP
+//    OLED_Init();                    									//初始化OLED(IIC)接口 初始化OLED显示器配置
+//		INFRARED_Init();																	//初始化红外光电对管
+//		TIM3_Cap_Init(0XFFFF,72-1);	    									//初始化超声波
+//	  MY_EXTI_Init();        														//初始化外部中断
 
 /***************************************************主循环********************************************************/
     while(1)
-	  {			oled1_show();    		//打开显示屏1
-			oled2_show();				//打开显示屏2
-			if(Flash_Send==1)  	//写入PID参数到Flash,由app控制该指令
-			{
-      Flash_Write();			//flash写数据
-			Flash_Send=0;				//清除写数据标志位
-			}
-		  if(Flag_Show==0)   	//使用MiniBalance APP和OLED显示屏
-			{
-//			APP_Show();					//打开手机端数据发送
+	  {			
+		  Encoder_Left = Read_Encoder(2);
+//			oled1_show();    		//打开显示屏1
+//			oled2_show();				//打开显示屏2
+//			if(Flash_Send==1)  	//写入PID参数到Flash,由app控制该指令
+//			{
+//      Flash_Write();			//flash写数据
+//			Flash_Send=0;				//清除写数据标志位
+//			}
+//		  if(Flag_Show==0)   	//使用MiniBalance APP和OLED显示屏
+//			{
+////			APP_Show();					//打开手机端数据发送
 
-			}
-			else                //使用计算机上位机 上位机使用的时候需要严格的时序，故此时关闭app监控部分和OLED显示屏
-			{
-			DataScope();     		//开启计算机上位机
-			}
-			delay_flag=1;				//打开等待中断标志位
-			delay_50=0;					//50ms定时大循环标志位初始置零，
-			while(delay_flag);	//通过MPU6050的INT中断实现的50ms精准延时
+//			}
+//			else                //使用计算机上位机 上位机使用的时候需要严格的时序，故此时关闭app监控部分和OLED显示屏
+//			{
+//			DataScope();     		//开启计算机上位机
+//			}
+//			delay_flag=1;				//打开等待中断标志位
+//			delay_50=0;					//50ms定时大循环标志位初始置零，
+//			while(delay_flag);	//通过MPU6050的INT中断实现的50ms精准延时
 	  }
 }
 
