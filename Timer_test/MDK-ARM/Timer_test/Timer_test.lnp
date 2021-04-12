@@ -6,6 +6,7 @@
 "timer_test\usart.o"
 "timer_test\stm32f1xx_it.o"
 "timer_test\stm32f1xx_hal_msp.o"
+"timer_test\pid.o"
 "timer_test\stm32f1xx_hal_gpio_ex.o"
 "timer_test\stm32f1xx_hal_tim.o"
 "timer_test\stm32f1xx_hal_tim_ex.o"

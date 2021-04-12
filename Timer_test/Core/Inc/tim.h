@@ -28,7 +28,7 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "pid.h"
 /* USER CODE END Includes */
 
 extern TIM_HandleTypeDef htim1;
@@ -47,7 +47,8 @@ void MX_TIM3_Init(void);
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* USER CODE BEGIN Prototypes */
-extern int16_t MotorSpeed;
+extern int16_t ReturnSpeed;
+extern int16_t OutSpeed;
 void TIM_SetTIM1Compare1(uint16_t compare);
 /* USER CODE END Prototypes */
 

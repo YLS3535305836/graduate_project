@@ -326,17 +326,26 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 }
 
 /* USER CODE BEGIN 1 */
-int16_t timer3,MotorSpeed = 0;
+int16_t timer3,ReturnSpeed = 0;
+int16_t OutSpeed = 0;
+PIDTydef pid_tim;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
+    PIDParameterInit(&pid_tim);
     if(htim == (&htim3))
     {
         timer3++;
+
 		if(__HAL_TIM_IS_TIM_COUNTING_DOWN(&htim2) == Direction_Clockwise )
-			MotorSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
+			ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
 		else
-			MotorSpeed = __HAL_TIM_GET_COUNTER(&htim2) - 65536; 
+			ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2) - 65536; 
 		__HAL_TIM_SET_COUNTER(&htim2,0);
+
+        OutSpeed = PIDCaculate_Increment(&pid_tim, 20, ReturnSpeed);
+        //printf("%d\r\n",pid_tim.Output); 	
+        PIDSetTim1Compare(OutSpeed);
+
     }
 }
 

@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "pid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,7 +75,7 @@ int fputc(int ch, FILE *f)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  PIDTydef pidMain = {0};
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -104,9 +104,9 @@ int main(void)
   HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_TIM_Encoder_Start(&htim2,TIM_CHANNEL_ALL);
-  HAL_TIM_Encoder_Start_IT(&htim2,TIM_CHANNEL_ALL);
-  uint16_t speed = 599;
-  HAL_GPIO_WritePin(Direcion_Pin_GPIO_Port, Direcion_Pin_Pin, GPIO_PIN_RESET);
+
+  PIDParameterInit(&pidMain);
+//   int16_t speed = -300;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,8 +117,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 //	MotorSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
-	TIM_SetTIM1Compare1(speed);
-	printf("Encoder : %d\r\n",MotorSpeed);    
+	// PIDSetTim1Compare(speed);
+	printf("NowSpeed : %d  PWM : %d\r\n",ReturnSpeed,OutSpeed);   
+	//  printf("%d\r\n",pidMain.LimitMax); 	  
 	HAL_Delay(100);
   }
   /* USER CODE END 3 */
