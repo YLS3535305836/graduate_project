@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -26,6 +27,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "pid.h"
+#include "simulate_iic.h"
+#include "HAL_MPU6050.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +48,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+  int16_t X= 0;
+  int16_t Y= 0;
+  int16_t Z= 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,7 +65,7 @@ int fputc(int ch, FILE *f)
 {
 
 	HAL_UART_Transmit(&huart2, (unsigned char *)&ch, 1, 0xFFFF); 
-	while(__HAL_UART_GET_FLAG(&huart2,UART_FLAG_TC)!=SET);		//等待发�?�完�?
+	while(__HAL_UART_GET_FLAG(&huart2,UART_FLAG_TC)!=SET);		
 
 	//while ((USART1->SR & 0X40) == 0); 
     //USART1->DR = (uint8_t) ch;
@@ -75,7 +80,7 @@ int fputc(int ch, FILE *f)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  PIDTydef pidMain = {0};
+//  PIDTydef pidMain = {0};
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -100,13 +105,17 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+  MPU_Init();
   HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_TIM_Encoder_Start(&htim2,TIM_CHANNEL_ALL);
 
-  PIDParameterInit(&pidMain);
-//   int16_t speed = -300;
+  PIDParameterInit();
+  
+	
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,11 +125,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	MotorSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
-	// PIDSetTim1Compare(speed);
-	printf("NowSpeed : %d  PWM : %d\r\n",ReturnSpeed,OutSpeed);   
-	//  printf("%d\r\n",pidMain.LimitMax); 	  
-	HAL_Delay(100);
+    //printf("ssssssss\r\n");
+	MPU_Get_Accelerometer(&X,&Y,&Z);
+    HAL_Delay(100);
+	//printf("NowSpeed : %d  PWM : %d\r\n",ReturnSpeed,OutSpeed);   
+	printf("%d %d %d\r\n",X,Y,Z); 	  
+	
   }
   /* USER CODE END 3 */
 }

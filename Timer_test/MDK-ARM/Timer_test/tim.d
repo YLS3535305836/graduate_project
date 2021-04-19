@@ -25,6 +25,7 @@ timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
@@ -32,3 +33,4 @@ timer_test\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 timer_test\tim.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 timer_test\tim.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 timer_test\tim.o: ../Core/Inc/pid.h
+timer_test\tim.o: ../Core/Inc/HAL_MPU6050.h

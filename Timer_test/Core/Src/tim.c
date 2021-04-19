@@ -147,9 +147,9 @@ void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 7200-1;
+  htim3.Init.Prescaler = 72-1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 100-1;
+  htim3.Init.Period = 1000-1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -328,24 +328,30 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 /* USER CODE BEGIN 1 */
 int16_t timer3,ReturnSpeed = 0;
 int16_t OutSpeed = 0;
-PIDTydef pid_tim;
+int16_t targetSpeed = -50;
+float P = 50;
+float I = 100;
+float D = 0;
+// short X,Y,Z = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-    PIDParameterInit(&pid_tim);
     if(htim == (&htim3))
     {
         timer3++;
-
-		if(__HAL_TIM_IS_TIM_COUNTING_DOWN(&htim2) == Direction_Clockwise )
+        if(timer3 == 10)
+        {
+            timer3 = 0;
+            if(__HAL_TIM_IS_TIM_COUNTING_DOWN(&htim2) == Direction_Clockwise )
 			ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
-		else
-			ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2) - 65536; 
-		__HAL_TIM_SET_COUNTER(&htim2,0);
-
-        OutSpeed = PIDCaculate_Increment(&pid_tim, 20, ReturnSpeed);
-        //printf("%d\r\n",pid_tim.Output); 	
+            else
+                ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2) - 65536; 
+            __HAL_TIM_SET_COUNTER(&htim2,0);
+        }
+		// MPU_Get_Accelerometer(&X,&Y,&Z);
+        // X = (MPU_Read_Byte(MPU_GYRO_XOUTH_REG)<<8) + MPU_Read_Byte(MPU_GYRO_XOUTL_REG);
+        OutSpeed = PIDCaculate_IncrementTest(P, I, D, &PID, targetSpeed, ReturnSpeed);
         PIDSetTim1Compare(OutSpeed);
-
+        
     }
 }
 

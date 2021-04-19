@@ -29,6 +29,7 @@ extern "C" {
 
 /* USER CODE BEGIN Includes */
 #include "pid.h"
+	#include "HAL_MPU6050.h"
 /* USER CODE END Includes */
 
 extern TIM_HandleTypeDef htim1;

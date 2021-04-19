@@ -5,7 +5,10 @@
 
 #define   Motor_Forward()      HAL_GPIO_WritePin(Direcion_Pin_GPIO_Port, Direcion_Pin_Pin, GPIO_PIN_SET)
 #define   Motor_Backward()     HAL_GPIO_WritePin(Direcion_Pin_GPIO_Port, Direcion_Pin_Pin, GPIO_PIN_RESET)
-typedef struct PID
+
+#define PID (*((PIDTydef*)(&arrayData[0])))
+
+typedef struct pid
 {
     float P;
     float I;
@@ -24,13 +27,15 @@ typedef struct PID
 	
 }PIDTydef;
 
+extern uint16_t arrayData[16];
 
-
-
-void PIDParameterInit(PIDTydef *pidPara);
+//PIDTydef *pidPara
+void PIDParameterInit(void);
 int16_t PIDCaculate_Position(PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 int16_t PIDCaculate_Increment(PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 void PIDSetTim1Compare(int16_t PIdOut);
+int16_t PIDCaculate_PositionTest(float p, float i, float d, PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
+int16_t PIDCaculate_IncrementTest(float P, float I, float D, PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 
 
 

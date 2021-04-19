@@ -32,13 +32,33 @@ extern "C" {
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
+#define  imitate   0   //模拟输入
+#define  input_h   8   //上下拉输�?
+#define  Float     4   //浮空输入
 
+#define  Push10     1   //推挽输出10
+#define  Push20     2   //推挽输出20
+#define  Push50     3   //推挽输出50
+
+#define  O_dr10     5   //�?漏输�?10
+#define  O_dr20     6   //�?漏输�?20
+#define  O_dr50     7   //�?漏输�?50
+
+#define  M_Push10     9    //推挽输出10   //复用
+#define  M_Push20     10   //推挽输出20
+#define  M_Push50     11   //推挽输出50
+
+#define  MO_dr10     13   //�?漏输�?10      //复用
+#define  MO_dr20     14   //�?漏输�?20
+#define  MO_dr50     15   //�?漏输�?50
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+void GPIO_DIR(GPIO_TypeDef* GPIOx,uint8_t pin,uint8_t mode);
+void GPIO_SET(GPIO_TypeDef* GPIOx,uint8_t pin,uint8_t level);
+uint8_t GPIO_GET(GPIO_TypeDef* GPIOx,uint8_t pin);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
