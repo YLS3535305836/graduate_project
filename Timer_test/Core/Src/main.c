@@ -19,7 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -28,7 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include "pid.h"
 #include "simulate_iic.h"
-#include "HAL_MPU6050.h"
+#include "MPU6050.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,9 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-  int16_t X= 0;
-  int16_t Y= 0;
-  int16_t Z= 0;
+float Y;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -105,17 +102,14 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_USART2_UART_Init();
-  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  MPU_Init();
+  IIC_Init();
+  MPU6050_initialize();
   HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_TIM_Encoder_Start(&htim2,TIM_CHANNEL_ALL);
 
   PIDParameterInit();
-  
-	
-  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -125,11 +119,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    //printf("ssssssss\r\n");
-	MPU_Get_Accelerometer(&X,&Y,&Z);
-    HAL_Delay(100);
-	//printf("NowSpeed : %d  PWM : %d\r\n",ReturnSpeed,OutSpeed);   
-	printf("%d %d %d\r\n",X,Y,Z); 	  
+    
+	//printf("NowSpeed : %d  PWM : %d\r\n",ReturnSpeed,OutSpeed);  
+	Y = Get_Angle(3);	
+	//printf("%f \r\n",X); 	  
 	
   }
   /* USER CODE END 3 */
@@ -174,7 +167,20 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void delay_us(uint32_t nus)
+{		
+	uint32_t temp;	    	 
+	SysTick->LOAD=nus*(72/8); //时间加载	  		 
+	SysTick->VAL=0x00;        //清空计数器
+	SysTick->CTRL=0x01 ;      //开始倒数 	 
+	do
+	{
+		temp=SysTick->CTRL;
+	}
+	while((temp&0x01)&&!(temp&(1<<16)));//等待时间到达   
+	SysTick->CTRL=0x00;       //关闭计数器
+	SysTick->VAL =0X00;       //清空计数器	 
+}
 /* USER CODE END 4 */
 
 /**

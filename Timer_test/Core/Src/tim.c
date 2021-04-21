@@ -332,7 +332,6 @@ int16_t targetSpeed = -50;
 float P = 50;
 float I = 100;
 float D = 0;
-// short X,Y,Z = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
     if(htim == (&htim3))
@@ -347,10 +346,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
                 ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2) - 65536; 
             __HAL_TIM_SET_COUNTER(&htim2,0);
         }
-		// MPU_Get_Accelerometer(&X,&Y,&Z);
-        // X = (MPU_Read_Byte(MPU_GYRO_XOUTH_REG)<<8) + MPU_Read_Byte(MPU_GYRO_XOUTL_REG);
         OutSpeed = PIDCaculate_IncrementTest(P, I, D, &PID, targetSpeed, ReturnSpeed);
         PIDSetTim1Compare(OutSpeed);
+		
+//		Get_Angle();
         
     }
 }

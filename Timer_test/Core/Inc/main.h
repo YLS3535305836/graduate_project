@@ -56,12 +56,16 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void delay_us(uint32_t nus);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
 #define Direcion_Pin_Pin GPIO_PIN_9
 #define Direcion_Pin_GPIO_Port GPIOA
+#define IIC_SDA_Pin GPIO_PIN_10
+#define IIC_SDA_GPIO_Port GPIOA
+#define IIC_SCL_Pin GPIO_PIN_11
+#define IIC_SCL_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
