@@ -31,10 +31,10 @@ extern uint16_t arrayData[16];
 
 //PIDTydef *pidPara
 void PIDParameterInit(void);
-int16_t PIDCaculate_Position(PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
+// int16_t PIDCaculate_Position(PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 int16_t PIDCaculate_Increment(PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 void PIDSetTim1Compare(int16_t PIdOut);
-int16_t PIDCaculate_PositionTest(float p, float i, float d, PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
+// int16_t PIDCaculate_PositionTest(float p, float i, float d, PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 int16_t PIDCaculate_IncrementTest(float P, float I, float D, PIDTydef *pid, int16_t TargetSpeed, int16_t NowSpeed);
 
 

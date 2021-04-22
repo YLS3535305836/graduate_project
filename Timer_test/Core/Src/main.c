@@ -47,7 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-float Y;
+float nowAngle_Y = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -121,7 +121,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
     
 	//printf("NowSpeed : %d  PWM : %d\r\n",ReturnSpeed,OutSpeed);  
-	Y = Get_Angle(3);	
+	 nowAngle_Y = Get_Angle(3);	
 	//printf("%f \r\n",X); 	  
 	
   }

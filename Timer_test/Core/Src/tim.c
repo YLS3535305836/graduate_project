@@ -328,7 +328,7 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 /* USER CODE BEGIN 1 */
 int16_t timer3,ReturnSpeed = 0;
 int16_t OutSpeed = 0;
-int16_t targetSpeed = -50;
+int16_t targetSpeed = -30;
 float P = 50;
 float I = 100;
 float D = 0;
@@ -340,16 +340,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         if(timer3 == 10)
         {
             timer3 = 0;
+			
             if(__HAL_TIM_IS_TIM_COUNTING_DOWN(&htim2) == Direction_Clockwise )
-			ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
+			    ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2); 
             else
                 ReturnSpeed = __HAL_TIM_GET_COUNTER(&htim2) - 65536; 
-            __HAL_TIM_SET_COUNTER(&htim2,0);
+			__HAL_TIM_SET_COUNTER(&htim2,0);                             //计数器清零
         }
-        OutSpeed = PIDCaculate_IncrementTest(P, I, D, &PID, targetSpeed, ReturnSpeed);
+//		nowAngle_Y = Get_Angle(2);	
+        OutSpeed = PIDCaculate_IncrementTest(P, I, D, &PID, (int16_t)nowAngle_Y, ReturnSpeed);
         PIDSetTim1Compare(OutSpeed);
 		
-//		Get_Angle();
+		
         
     }
 }

@@ -571,6 +571,11 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>6050_pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\6050_pid.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

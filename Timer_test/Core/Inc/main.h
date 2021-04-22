@@ -39,7 +39,7 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+extern float nowAngle_Y;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
